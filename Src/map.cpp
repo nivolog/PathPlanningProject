@@ -16,9 +16,9 @@ Map::Map()
 Map::~Map()
 {
     if (Grid) {
-        for (int i = 0; i < height; ++i)
-            delete[] Grid[i];
-        delete[] Grid;
+        for (int i = 0; i < height; ++i){}
+           delete[] Grid[i];
+        if (Grid) delete[] Grid;
     }
 }
 
@@ -340,9 +340,9 @@ double Map::getCellSize() const
 }
 
 Node Map::getStartNode() {
-    return {start_j, start_i, start_i*width + start_j};
+    return {start_i, start_j, start_j*height + start_i};
 }
 
 Node Map::getGoalNode() {
-    return {goal_j, goal_i, goal_i*width + goal_j};
+    return {goal_i, goal_j, goal_j*height + goal_i};
 }
