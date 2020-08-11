@@ -15,7 +15,7 @@ Mission::Mission(const char *FileName)
 
 Mission::~Mission()
 {
-    if (logger)
+    if (logger != nullptr)
         delete logger;
 }
 
