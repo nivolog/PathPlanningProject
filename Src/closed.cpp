@@ -34,3 +34,9 @@ void Closed::clear() {
 int Closed::size() {
     return Closed.size();
 }
+
+void Closed::log(std::string typeLog) {
+    if("size" == typeLog){
+        std::cout << "Closed container size is " << size() << std::endl;
+    }
+}

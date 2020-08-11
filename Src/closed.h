@@ -20,6 +20,7 @@ public:
     void output();
     void clear();
     int size();
+    void log(std::string typeLog);
 };
 
 
