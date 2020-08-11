@@ -1,1 +1,0 @@
-/home/vlad/PathPlanningProject/Bin/Debug/PathPlanning
