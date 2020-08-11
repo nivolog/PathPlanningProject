@@ -16,8 +16,8 @@ Map::Map()
 Map::~Map()
 {
     if (Grid) {
-        for (int i = 0; i < height; ++i){}
-           delete[] Grid[i];
+        for (int i = 0; i < height; ++i)
+            delete[] Grid[i];
         if (Grid) delete[] Grid;
     }
 }
