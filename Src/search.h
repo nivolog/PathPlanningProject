@@ -18,7 +18,7 @@ class Search
     public:
         Search();
         ~Search(void);
-        SearchResult startSearch(ILogger *Logger, const Map &Map, const EnvironmentOptions &options);
+        SearchResult startSearch(ILogger *Logger, Map &OccupancyMap, const EnvironmentOptions &options);
 
     protected:
         //Parameters
@@ -34,7 +34,7 @@ class Search
         Open                            open;
         SearchResult                    sresult; //This will store the search result
         std::list<Node>                 lppath, hppath; //
-        Map                             occupancyMap;
+        //Map*                      occupancyMap;
 
         //logs
         std::unordered_map <int, class Node>::iterator address_of_goal_node;
