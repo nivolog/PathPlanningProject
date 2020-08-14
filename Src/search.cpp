@@ -219,9 +219,11 @@ void Search::createLPPath(Node &start) {
     else{
         std::cout << "ERROR: Goal was not reached during working" << std::endl;
     }
+    /*
     for (Node pathPoint: lppath){
         pathPoint.print();
     }
+     */
 }
 
 void Search::createHPPath() {
